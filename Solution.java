@@ -17,10 +17,9 @@ class Solution {
   public static List<String> linkedListValues(Node<String> head) {
     // todo
     List<String> vals = new ArrayList<String>();
-    Node<String> curr = head;
-    while (curr != null){
-      vals.add(curr.val);
-      curr = curr.next;
+    while (head != null){
+      vals.add(head.val);
+      head = head.next;
     }
     return vals;
   }
